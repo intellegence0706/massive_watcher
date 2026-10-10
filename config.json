@@ -1,0 +1,30 @@
+{
+  "target": "massive.gg",
+  "name_patterns": ["massive"],
+  "anchors": {
+    "ACTwVD28XfbDKesMA1BEtH6158J7QKMRK2TotDBDfkB5": "massive.gg treasury (published at massive.gg/api/payments/methods/available); created 10 MASSIVE test tokens on 2026-09-30",
+    "E4Kh4vodcMUu3KCDtZaYf83gWcCGH5GE9bYVXsyGTT6U": "first funder of the treasury (2026-09-08), 128 txs, not an exchange"
+  },
+  "max_depth": 2,
+  "max_official_depth": 1,
+  "min_transfer_sol": 0.02,
+  "fresh_max_txs": 3,
+  "live_trace_hops": 2,
+  "trace_timeout_seconds": 4,
+  "alert_on_copycats": false,
+  "rpc_concurrency": 4,
+  "pump_create_mention": "TSLvdd1pWpHVjahSpsvCXUbgwsL3JAcvokwaKt1eokM",
+  "site": {
+    "base_url": "https://massive.gg",
+    "poll_seconds": 60,
+    "api_paths": ["/api/stats", "/api/payments/methods/available", "/api/market"],
+    "addr_alert_paths": ["/api/stats", "/api/payments/methods/available"]
+  },
+  "files": {
+    "watchlist": "data/watchlist.json",
+    "proof": "data/proof.jsonl",
+    "site_state": "data/site_state.json",
+    "status": "data/status.json",
+    "backtests": "data/backtests"
+  }
+}
